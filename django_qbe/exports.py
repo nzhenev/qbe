@@ -17,6 +17,7 @@ try:
 except ImportError:
     # Backward compatibility for Django prior to 1.7
     from django.utils.datastructures import SortedDict as OrderedDict
+    from collections import OrderedDict as SortedDict
 
 __all__ = ("formats", )
 
